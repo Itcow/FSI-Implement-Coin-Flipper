@@ -68,5 +68,17 @@ flipBtn.addEventListener('click',()=>{
     // Clear Button Click Handler
         // TODO: Reset global variables to 0
         // TODO: Update the scoreboard (same logic as in flip button click handler)
+const clearBtn = document.getElementById("clear");
+clearBtn.addEventListener('click', ()=>{
+    tailsRolled = 0;
+    headsRolled = 0;
+    percentTails = 0;
+    percentHeads = 0;
 
+    heads.textContent = headsRolled;
+    tails.textContent = tailsRolled;
+    headsPerc.textContent = percentTails;
+    tailsPerc.textContent = percentTails;
+    message.textContent = "Let's Get Rolling!"
+})
 })
